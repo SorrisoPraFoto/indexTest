@@ -1,0 +1,504 @@
+@font-face{
+    font-family: "Gotham";
+    src: url("Gotham-Light.otf");
+}
+
+@font-face {
+    font-family: "CG";
+    src: url("CG.otf");
+}
+
+@keyframes scroll-down {
+    0% {
+      opacity: 0;
+    }
+    30% {
+      opacity: 1;
+    }
+    60% {
+      opacity: 1;
+    }
+    100% {
+      top: 80%;
+      opacity: 0;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-image: url("fundo.jpg");
+    background-size: 120%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: rgb(1,1,11);
+    z-index: 0;
+}
+
+main {
+    padding-bottom: 50vh;
+}
+
+.navBar {
+    width: 80vw;
+    display: block;
+    margin-left: 12vw;
+    margin-right: auto;
+    opacity: 0.95;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.navBar a {
+    font-family: "Gotham";
+    vertical-align: 5vh;
+    display: inline;
+    line-height: normal;
+    text-decoration: none;
+    color: #F7F7F7;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    transition: opacity 1s;
+}
+
+.navBar a:hover {
+    opacity: 0.6;
+}
+
+.navBar img:hover {
+    opacity: 0.5;
+}
+
+.navBar img {
+    margin: 1%; 
+    border: 1.5px solid #F7F7F7;
+    border-radius: 50%;
+    padding: 5px;
+    transition: opacity 1s;
+}
+
+header {
+    background: rgb(6,6,6);
+    background: linear-gradient(180deg, rgba(6,6,6,0.2) 0%, rgba(6,6,6,0.01) 50%, rgba(43,43,43,0.01) 100%);
+}
+
+header #imgFundo {
+    width: 100%;
+    display: inline-block;
+}
+
+.titulo {
+    font-family: "CG";
+    font-size: 50px;
+    color: #F7F7F7;
+    text-align: center;
+    text-shadow: 0px 0.4px 2px rgba(0,0,0,0.97);
+}
+
+/* * * * * * * * * * * * * *
+*                          *
+*                          *
+*   BOTÃO DE SCROLL DOWN   *
+*                          *
+*                          *
+* * * * * * * * * * * * * */
+
+.scroll {
+    height: 48px;
+    width: 28px;
+    border: 2px solid #F7F7F7;
+    position: absolute;
+    left: 48.5vw;
+    top: 60vh;
+    bottom: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.scroll::before,
+.scroll::after {
+  content: "";
+  position: absolute;
+  top: 20%;
+  left: 13px;
+  height: 5px;
+  border: 1px solid #F7F7F7;
+  border-radius: 80px;
+  animation: scroll-down 1.5s ease-in-out infinite;
+}
+
+/* * * * * * * * * * * * * *
+*                          *
+*                          *
+*       Sessão Sobre       *
+*                          *
+*                          *
+* * * * * * * * * * * * * */
+
+.sobre {
+    margin-left: auto;
+    margin-right: auto;
+    width: 60vw;
+}
+
+.sobre div {
+    height: 50vh;
+    padding: 15px;
+    border: 2px solid #fab23d;
+    border-radius: 60px;
+    background: rgb(6,6,6);
+    background: linear-gradient(0deg, rgba(6,6,6,0.5) 0%, rgba(6,6,6,0.5) 53%, rgba(43,43,43,0.5) 100%);
+}
+
+.sobre h3 {
+    text-align: center;
+    font-family: "CG";
+    font-size: 50px;
+    color: #F7F7F7;
+    text-shadow: 0px 0.4px 2px rgba(0,0,0,0.97);
+}
+
+.sobre a {
+    font-family: "Gotham";
+    font-size: 18px;
+    color: #F7F7F7;
+    padding: 15px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+
+.difference {
+    color: #F7F7F7;
+    font-family: "CG";
+}
+
+.difference .container1 {
+    float: right;
+    width: 30vw;
+    margin: 5%;
+    border: 2px solid #fab23d;
+    padding: 2%;
+}
+
+.difference .container2 {
+    float: left;
+    width: 30vw;
+    margin: 5%;
+    margin-top: 50vh;
+    border: 2px solid #fab23d;
+    padding: 2%;
+}
+
+.difference .container3 {
+    float: right;
+    width: 30vw;
+    margin: 5%;
+    margin-top: 40vh;
+    border: 2px solid #fab23d;
+    padding: 2%;
+}
+
+.difference img {
+    display: flex;
+    height: 30vh;
+    width: 15vw;
+}
+
+.difference h3 {
+    text-align: center;
+    font-family: "CG";
+    font-size: 36px;
+}
+
+.difference a {
+    font-family: "Gotham";
+    font-size: 20px;
+}
+
+/* * * * * * * * * * * * * *
+*                          *
+*                          *
+*       Sessão Registro    *
+*                          *
+*                          *
+* * * * * * * * * * * * * */
+
+.campoRegistro{
+    margin-top: 150vh;
+}
+
+.campoRegistro h2 {
+    position: relative;
+    display: flex;
+    left: 33vw;
+    text-align: center;
+    font-family: "CG";
+    font-size: 80px;
+    color: white;
+}
+
+#registrar {
+    cursor: pointer;
+    font-family: "Gotham";
+    font-weight: 900;
+    font-size: 20px;
+    color: black;
+    background-color: #fab23d;
+    border: 1px solid #fab23d;
+    border-radius: 12px;
+    width: 25vw;
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+    margin-left: 38vw;
+    transition: ease-in-out 0.5s;
+}
+
+#registrar:hover {
+    background-color: rgb(1,1,11);
+    color: white;
+}
+
+/* * * * * * * * * * * * * *
+*                          *
+*                          *
+*       Footer             *
+*                          *
+*                          *
+* * * * * * * * * * * * * */
+
+footer {
+    background: rgb(1,1,11);
+    background: linear-gradient(180deg, rgba(1,1,11,1) 0%, rgba(1,1,8,1) 25%, rgba(1,1,5,1) 50%, rgba(1,1,3,1) 75%, rgba(0,0,0,1) 100%);
+    height: 60vh;
+}
+
+footer h4 {
+    margin: 2%;
+    margin-top: 10vh;
+    display: flex;
+    font-family: "CG";
+    font-size: 15px;
+    color: white;
+}
+
+footer ul {
+    font-family: "Gotham";
+    font-size: 12px;
+    color: white;
+}
+
+footer .socialMedia {
+    float: right;
+    margin: 10px;
+}
+
+footer img {
+    width: 2vw;
+    height: 4vh;
+}
+
+/* * * * * * * * * * * * * *
+*                          *
+*                          *
+*      Responsividade      *
+*                          *
+*                          *
+* * * * * * * * * * * * * */
+
+@media only screen and (max-width: 1560px) {
+    .sobre {
+        margin-top: 20vh;
+        width: 90vw;
+    }
+    .campoRegistro{
+        margin-top: 200vh;
+    }
+    .campoRegistro h2 {
+        left: 33vw;
+        font-size: 80px;
+    }
+}
+
+
+@media only screen and (max-width: 1170px) {
+    .sobre {
+        margin-top: 20vh;
+        width: 90vw;
+    }
+    .campoRegistro{
+        margin-top: 200vh;
+    }
+    .campoRegistro h2 {
+        left: 30vw;
+        font-size: 60px;
+    }
+
+    footer img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    body {
+        margin: 0;
+        background-image: url("fundo.jpg");
+        background-size: 250%;
+        background-repeat: no-repeat;
+    }
+
+    .navBar {
+        display: inline;
+        font-size: 15px;
+        opacity: 0.95;
+        width: 100%;
+        align-items: center;
+        margin-left: 28vw;
+    }
+
+    .navBar a {
+        font-family: "Gotham";
+        vertical-align: 4vh;
+        display: inline;
+        line-height: normal;
+        text-decoration: none;
+        color: #F7F7F7;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+
+    .titulo {
+        font-family: "CG";
+        font-size: 40px;
+        margin-top: 50%;
+        color: #F7F7F7;
+        width: 100%;
+        text-align: center;
+    }
+
+    .scroll{
+        display: none;
+        visibility: hidden;
+    }
+
+    .sobre {
+        margin-top: 30vh;
+        margin-bottom: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85vw;
+    }
+    
+    .sobre div {
+        height: 82vh;
+        padding: 15px;
+        background: rgb(6,6,6);
+        background: linear-gradient(180deg, rgba(6,6,6,0.2) 0%, rgba(6,6,6,0.01) 50%, rgba(43,43,43,0.01) 100%);
+    }
+    
+    .sobre h3 {
+        text-align: center;
+        font-family: "CG";
+        font-size: 30px;
+        color: #F7F7F7;
+        text-shadow: 0px 0.4px 2px rgba(0,0,0,0.97);
+    }
+
+    .campoRegistro h2 {
+        left: 20vw;
+    }
+
+    .difference h3 {
+        font-size: 25px;
+    }
+    
+    .difference a {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    body {
+        margin: 0;
+        background-image: url("fundo.jpg");
+        background-size: 300%;
+        background-repeat: no-repeat;
+    }
+
+    .navBar {
+        display: inline;
+        font-size: 15px;
+        opacity: 0.95;
+        width: 85%;
+        align-items: center;
+        margin-left: 10vw;
+    }
+
+    .navBar a {
+        font-family: "Gotham";
+        vertical-align: 4vh;
+        display: inline;
+        line-height: normal;
+        text-decoration: none;
+        color: #F7F7F7;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+    }
+
+    .titulo {
+        font-family: "CG";
+        font-size: 30px;
+        margin-top: 50%;
+        color: #F7F7F7;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sobre {
+        margin-top: 30vh;
+        margin-bottom: 10vh;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85vw;
+    }
+    
+    .sobre div {
+        height: 88vh;
+        padding: 15px;
+        background: rgb(6,6,6);
+        background: linear-gradient(180deg, rgba(6,6,6,0.2) 0%, rgba(6,6,6,0.01) 50%, rgba(43,43,43,0.01) 100%);
+    }
+    
+    .sobre h3 {
+        text-align: center;
+        font-family: "CG";
+        font-size: 30px;
+        color: #F7F7F7;
+        text-shadow: 0px 0.4px 2px rgba(0,0,0,0.97);
+    }
+
+    .sobre a {
+        font-size: 14px;
+    }
+
+    .campoRegistro h2 {
+        font-size: 40px;
+        left: 13vw;
+    }
+
+    #registrar {
+        font-size: 13px;
+    }
+
+    .difference h3 {
+        font-size: 20px;
+    }
+    
+    .difference a {
+        font-size: 12px;
+    }
+}

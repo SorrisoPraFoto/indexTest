@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='pt-br'>
+<head>
+    <meta charset="UTF-8">
+	<meta http-equiv="Charset" charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js\jquery.js"></script>
+    <link rel="stylesheet" href="css\index.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<body>
+    <header>
+        <div class="navBar">
+            <a href="#">Home</a>
+            <a href="#">Registration & Upgrades</a>
+            <a href="#">Events</a>
+            <img alt="logo" id="logoImg" src="css/logoBranco.png" width="60px" height="60px">
+            <a href="#">Exclusive Store</a>
+            <a href="#">Homeless Crisis</a>
+            <a href="#">Chat Room <b style="red">007<b></a>
+        </div>
+    </header>
+    <main>
+        <div data-aos="zoom-in" data-aos-duration="2000" class="titulo">
+            <h1>Exclusively Behind The Scenes</h1>
+        <div>
+        <a href="#anchor">
+            <div class="scroll"></div>
+        </a>
+    </main>
+    <div id="anchor"></div>
+    <section class="sobre">
+        <div data-aos="fade-down" data-aos-duration="700">
+            <h3>Who we are</h3>
+            <a>We are a social club with a purpose. Part of our mission is to help provide necessary funding to address the homeless epidemic that is growing in our local communities. Let us explain.
+Exclusively Behind The Scenes invites you to join our club and by doing so, participate or help support us in the many events that we have to offer. All the while, Exclusively Behind The Scenes issues a percentage of raised funds as donations to popular well known organizations that provides much needed resources & help to alleviate homelessness for all our communities. We want to make a difference. </a>
+        </div>
+    </section>
+    <section class="difference">
+        <div class="container1" data-aos="fade-left" data-aos-duration="700">
+            <h3>Make the Difference</h3>
+            <a>Exclusively Behind The Scenes invites you to make the <bold>difference</bold>! We issues a percentage of raised funds as donations to popular well known organizations that provides much needed resources & help to alleviate homelessness for all our communities.</a>
+        </div>
+        <div class="container2" data-aos="fade-right" data-aos-duration="700">
+            <h3>Create your Group and Join Us</h3>
+            <a>Invite your friends and start your own <bold>group</bold> and be a leader, earning gift cards, perks, prizes and more exclusivity!</a>
+        </div>
+        <div class="container3" data-aos="fade-left" data-aos-duration="700">
+            <h3>We are in search of</h3>
+            <a>Entertainment seekers, Networkers, Shy individuals, Men, Women, White collar, Blue collar, Self employed, Party people, Loners, Man of the House, Housewives, Entrepreneurs, Ordinary to Exotic people. We all come together to celebrate life, have fun and help and support the homeless epidemic locally and advancing worldwide. We invite you to register and join us..</a>
+        </div>
+    </section>
+    <section class="campoRegistro">
+        <h2>We need YOU</h2>
+        <button id="registrar">Register Now</button>
+    </section>
+    <footer>
+        <h4>Office Phone</h4>
+        <ul>
+            <li>(888) 310-5679  (Toll Free)</li>
+            <li>(310) 591-0412  (Direct)</li>
+        </ul>
+        <h4>Mailing Address</h4>
+        <ul>
+            <li>Exclusively Behind The Scenes</li>
+            <li>4712 Admiralty Way 220</li>
+            <li>Marina del Rey, California 90292-6905</li>
+        </ul>
+        <h4>Email</h4>
+        <ul>
+            <li>Info@ExclusivelyBehindTheScenes.Com</li>
+            <li>FeedBack@ExclusivelyBehindTheScenes.Com</li>
+            <li>Admin@ExclusivelyBehindTheScenes.Com</li>
+        </ul>
+        <div class="socialMedia">
+            <a href="https://www.instagram.com/ExclusivelyBehindTheScenes/" target="_blank"><img src="css/insta.png"></a>
+            <a href="https://www.youtube.com/channel/UCsp79pwlJtwPv3-Gs2civ5w" target="_blank"><img src="css/yt.png"></a>
+            <a href="https://twitter.com/ExclusivelyBTS1" target="_blank"><img src="css/twitter.png"></a>
+            <a href="https://www.facebook.com/ExclusivelyBehindTheScenes" target="_blank"><img src="css/facebook.png"></a>
+        </div>
+    </footer>
+
+    <script>
+    AOS.init();
+    $(".scroll").hide();
+    $(".scroll").delay(2000).fadeIn("1200");
+    $(".scroll").mouseover(function(){ 
+        $(this).animate({
+            marginTop: "15px"
+            }, 700);
+        $(this).animate({
+            marginTop: "0px"
+            }, 700);
+        });
+    </script>
+</body>
+</html>
